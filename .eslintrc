@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "cypress/globals": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:compat/recommended",
+    "plugin:cypress/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": [
+    "compat",
+    "cypress",
+    "jsx-a11y",
+    "prettier",
+    "react-hooks",
+    "react"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "compat/compat": "off",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-async-tests": "error",
+    "cypress/no-force": "warn",
+    "cypress/no-pause": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "no-console": "off",
+    "prettier/prettier": ["error"],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-uses-react": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
