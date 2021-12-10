@@ -8,9 +8,9 @@ export const Store = createContext();
 export function StoreProvider({ children }) {
   const [state, dispatch] = useReducer(REDUCERS, INITIAL_STATE);
 
-  return useMemo(() => {
-    const value = { state, dispatch };
+  const value = useMemo(() => ({ state, dispatch }), [state]);
 
+  return useMemo(() => {
     return <Store.Provider value={value}>{children}</Store.Provider>;
-  }, [children, state]);
+  }, [children, value]);
 }

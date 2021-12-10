@@ -5,4 +5,6 @@ export default {
   title: 'Molecules/Loading',
 };
 
-export const Loading = () => <LOADING />;
+export var Loading = function () {
+  return <LOADING />;
+};

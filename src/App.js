@@ -6,7 +6,7 @@ import ROUTER from './router/Router';
 import { StoreProvider } from './store';
 import THEME from './theme';
 
-const APP = () => {
+export default function FOOTER() {
   return (
     <StoreProvider>
       <ThemeProvider theme={THEME}>
@@ -16,6 +16,4 @@ const APP = () => {
       </ThemeProvider>
     </StoreProvider>
   );
-};
-
-export default APP;
+}

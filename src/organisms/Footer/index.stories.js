@@ -5,4 +5,6 @@ export default {
   title: 'organisms/Footer',
 };
 
-export const Footer = () => <FOOTER />;
+export var Footer = function () {
+  return <FOOTER />;
+};

@@ -25,7 +25,7 @@ export default function FOOTER() {
           justifyContent="center"
         >
           <Toolbar>
-            <COPYRIGHT company="Vitat" url="https://sejavitat.com.br" />
+            <COPYRIGHT company="Company" url="https://www.company.com" />
           </Toolbar>
         </Grid>
       </AppBar>

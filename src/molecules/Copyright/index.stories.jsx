@@ -5,4 +5,6 @@ export default {
   title: 'Molecules/Copyright',
 };
 
-export const Copyright = () => <COPYRIGHT />;
+export var Copyright = function () {
+  return <COPYRIGHT />;
+};
