@@ -5,6 +5,6 @@ export default {
   title: 'Atoms/LightBulbIcon',
 };
 
-export var LightBulbIcon = function () {
+export const LightBulbIcon = () => {
   return <LIGHT_BULB_ICON />;
 };
